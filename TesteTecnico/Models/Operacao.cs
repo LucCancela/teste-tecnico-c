@@ -1,15 +1,18 @@
-public class Operacao
+namespace TesteTecnico.Models
 {
-    public int Id { get; set; }
-    public int UsuarioId { get; set; }
-    public int AtivoId { get; set; }
-    public int Quantidade { get; set; }
-    public decimal PrecoUnitario { get; set; }
-    public string TipoOperacao { get; set; }
-    public decimal Corretagem { get; set; }
-    public DateTime DataHora { get; set; }
+    public class Operacao
+    {
+        public int Id { get; set; }
+        public int UsuarioId { get; set; }
+        public int AtivoId { get; set; }
+        public int Quantidade { get; set; }
+        public decimal PrecoUnitario { get; set; }
+        public string TipoOperacao { get; set; }
+        public decimal Corretagem { get; set; }
+        public DateTime DataHora { get; set; }
 
-    public Usuario Usuario { get; set; }
-    public Ativo Ativo { get; set; }
+        public Usuario Usuario { get; set; }
+        public Ativo Ativo { get; set; }
 
+    }
 }
